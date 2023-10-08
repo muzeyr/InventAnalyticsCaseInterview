@@ -121,7 +121,6 @@ export class UserController {
       borrow.book =_book;
     }
     await repo.save(borrow);
-    console.log(1);
 
     return ResponseUtil.sendResponse(res, "Successfully reserved", borrow, null);
 
@@ -164,21 +163,17 @@ export class UserController {
     if (_book !== null && _user !== null) {
       const result = await AppDataSource.query(
         `select * from borrows where borrowedById='${_user.id}' and bookId='${_book.id}' `);
-        console.log(result);
         if(!isDefined(result)){
           return ResponseUtil.sendError(res, "Not found",404, null);
         }
         const item = result[0];
-        console.log(item);
         if(item.returnDate !== null){
           return ResponseUtil.sendError(res, "This book has already been delivered",500, null);
         }         
         item.returnDate = new Date();
         item.score = dto.score;
-        console.log('önce',item);
 
         await repo.save(item);
-        console.log('sonra',item);
     }
 
     return ResponseUtil.sendResponse(res, "Successfully return", null, null);
