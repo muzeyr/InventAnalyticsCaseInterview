@@ -203,6 +203,13 @@ You can find detailed API documentation, including request/response examples, in
 #### Return Book
 - **Endpoint:** `/users/{userId}/return/{bookId}`
 - **Method:** `POST`
+ ** Request: **
+ ```json
+ {
+	"score": 5
+}
+   ```
+
 - **Sample Response:**
   ```json
   {
