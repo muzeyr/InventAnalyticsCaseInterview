@@ -1,7 +1,0 @@
-node_modules/
-.env
-docker/
-yarn-error.log
-uploads/
-.DS_Store
-build/
