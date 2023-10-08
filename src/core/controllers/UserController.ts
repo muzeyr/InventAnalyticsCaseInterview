@@ -45,8 +45,7 @@ export class UserController {
         },
         relations:['borrows','borrows.book'],
       });
-
-      const currentDate = new Date();
+ 
       if(user!==null){
         const currentBorrows = user.borrows.filter((borrow) => !borrow.returnDate);
         const pastBorrows = user.borrows.filter((borrow) => borrow.returnDate);

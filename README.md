@@ -3,6 +3,51 @@
 
 Welcome to the Library Management API project! This Node.js-based REST API is designed to manage library operations, such as listing users, accessing user information, creating new users, listing books, accessing book information, creating new books, borrowing books, returning books, and rating books.
 
+Tabii ki, aşağıda verilen README.md dosyası içeriğini düzenlenmiş bir şekilde bulabilirsiniz:
+
+```markdown
+# Nx Microservice Project
+
+![Nx Logo](https://nx.dev/assets/images/nx-logo.png)
+
+This Nx monorepo project includes two different microservice projects that can be easily adapted for Kafka integration to build scalable microservices.
+
+## Getting Started
+
+### Running User Microservice
+
+You can start the User Microservice by running:
+
+```bash
+nx serve user
+```
+
+You can access the User Microservice's Swagger documentation at [http://localhost:3000/docs](http://localhost:3000/docs) for testing.
+
+### Running Book Microservice
+
+You can start the Book Microservice by running:
+
+```bash
+nx serve book
+```
+
+You can access the Book Microservice's Swagger documentation at [http://localhost:3001/docs](http://localhost:3001/docs) for testing.
+
+### Running Both Microservices
+
+You can use the provided `pm2.yml` file to automatically start both microservices together.
+
+## Usage
+
+Feel free to explore and expand upon this Nx microservices project for your specific needs. It's designed to be adaptable and ready for Kafka integration, making it a great foundation for building scalable microservices.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+Bu README.md dosyası, Nx yapısı ile geliştirilmiş iki farklı mikroservis projesini tanıtır ve bu projelerin nasıl çalıştırılacağını, Swagger dökümantasyonlarına nasıl erişileceğini ve projeyi nasıl kullanabileceğinizi anlatır. İhtiyaçlarınıza göre daha fazla bilgi ekleyebilir veya düzenleyebilirsiniz. Ayrıca, projenin lisans bilgilerini güncellemeyi unutmayın.
 ## 🚀 Getting Started
 
 Follow the instructions below to set up and run the project locally:
